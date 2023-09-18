@@ -1,27 +1,92 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
+.frm-field-range {
+    .field-range-slider {
+        padding: 0 12px;
+        margin-top: 18px;
+        position: relative;
+    }
+    .field-range-wrap {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 18px;
+        .f500;
+    }
+    .field-range-value {
+        &[data-unit] {
+            &:before {
+                content: attr(data-unit);
+            }
+        }
+        &[data-end] {
+            &:after {
+                content: attr(data-end);
+            }
+        }
+    }
+    .field-range {
+        display: flex;
+        flex-shrink: 0;
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+        &:after {
+            content: " - ";
+            flex-shrink: 0;
+            display: block;
+            .f500;
+        }
+    }
+    .ui-slider {
+        height: 6px;
+        background: var(--clr-border);
+        .ui-slider-range {
+            background-color: var(--clr-border);
+        }
+        .ui-slider-handle {
+            width: 24px;
+            height: 24px;
+            top: 0;
+            margin-top: -9px;
+            margin-left: -12px;
+            border-radius: 50%;
+            border: 1px solid var(--clr-border);
+            background: #F9F9F9;
+            cursor: pointer;
+            outline: none;
+        }
+    }
 }
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
-}
-.btn,
-button,
-input[type="submit"] {
-	
+.frm-main-button {
+    display: flex;
+    line-height: 1;
+    position: relative;
+    .field-input {
+        flex: 1;
+        padding: 0 1px 0 0;
+    }
+    .field-button {
+        flex-shrink: 0;
+    }
+    .btn, .form-input {
+        height: 40px;
+    }
+    .form-input {
+        background-color: #f9f9f9;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .btn {
+        padding: 0 20px;
+        min-width: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: normal;
+    }
 }
 .frm-row,
 .frm-field,
@@ -31,7 +96,11 @@ input[type="submit"] {
 	position: relative;
 	line-height: 1;
 }
-.frm-select {
+.frm-field {
+    display: block;
+    width: 100%;
+}
+.frm-select, .frm-select-color {
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -55,4 +124,74 @@ input[type="submit"] {
             position: absolute;
         }
 	}
+}
+.frm-select-color {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    overflow: hidden;
+    label {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        border: 1px solid var(--clr-border);
+        overflow: hidden;
+        img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    input {
+        &:checked {
+            &~label {
+                border-color: var(--clr-att);
+            }
+        }
+    }
+}
+.frm-select {
+    label {
+        min-height: 24px;
+        line-height: 24px;
+        padding-left: 34px;
+        &:before, &:after {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            margin: -12px 0 0 -12px;
+        }
+        &:before {
+            border: 1px solid var(--clr-border);
+            background: #F9F9F9;
+        }
+        &:after {
+            background: url(../img/icons/check.svg) center no-repeat;
+            background-size: 12px auto;
+            opacity: 0;
+        }
+    }
+    input {
+        &:checked {
+            &~label {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
 }

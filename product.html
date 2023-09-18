@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/jquery-ui.min.js" defer></script>
+    <script src="./js/jquery.ui.touch-punch.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/jquery.swipebox.min.js" defer></script>
+    <script src="./js/jquery.maskedinput.min.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="header-main-panel">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="actions-wrap actions-locale">
+                        <div class="action-wrap action-lang">
+                            <a href="" class="btn-action-lang">
+                                <span class="button-ico">
+                                    <img src="./img/icons/lang.svg" alt="">
+                                </span>
+                                <span class="button-title">ru</span>
+                            </a>
+                        </div>
+                        <div class="action-wrap action-select js-popup-wrap">
+                            <a href="" class="btn-action-toggle btn-popup-open js-btn-popup-toggle">Русский</a>
+                            <div class="popup-content-block js-popup-block">
+                                <ul class="menu">
+                                    <li><a href="">English</a></li>
+                                    <li><a href="">Русский</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions-wrap actions-main">
+                        <div class="action-wrap action-search">
+                            <a href="" class="btn-action-ico ico-search"></a>
+                        </div>
+                        <div class="action-wrap action-location">
+                            <a href="" class="btn-action-ico ico-location"></a>
+                        </div>
+                        <div class="action-wrap action-user">
+                            <a href="" class="btn-action-ico ico-user"></a>
+                        </div>
+                        <div class="action-wrap action-cart">
+                            <a href="" class="btn-action-ico ico-cart" data-count="10"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-menu-panel main-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-action-ico ico-menu btn-popup-open js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="">New in</a>
+                                </li>
+                                <li>
+                                    <a href="">Сумки</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Обувь</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Часы</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Для женщин</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Для мужчин</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-actions-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-user.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Войти / Зарегистрироваться</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-callback.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Свяжитесь с нами</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-lang.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Россия</span>
+                                    </a>
+                                </li>
+                                <li class="menu-sep">
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-chat.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Руссский</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!--page-full-->
+        <div class="page-full">
+
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box">
+                <ol class="menu">
+                    <li><a href="">Женщина</a></li>
+                    <li><a href="">Сумки</a></li>
+                    <li><a href="">Сумки через плечо</a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
+
+            <!--card-box-->
+            <div class="card-box">
+
+                <!--photos-inner-wrap-->
+                <div class="photos-inner-wrap">
+                    <div class="photos-slider-box">
+                        <div class="slider-wrap">
+                            <div class="slider">
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="sl-wrap">
+                                    <a href="./img/product.png" class="elm-photo photo-cover" data-swipebox="gal">
+                                        <img src="./img/product.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/photos-inner-wrap-->
+
+                <!--info-inner-wrap-->
+                <div class="info-inner-wrap">
+                    <div class="total-inner-wrap">
+                        <div class="total-wrap">97 результатов</div>
+                    </div>
+                    <div class="title-inner-wrap">
+                        <div class="title-subtitle">B0005492.P420 LION</div>
+                        <h1 class="h1-title">Маленькая спортивная сумка</h1>
+                    </div>
+                    <div class="actions-inner-wrap">
+                        <div class="price-wrap">
+                            <div class="elm-price">€477</div>
+                        </div>
+                        <div class="action-wrap">
+                            <a href="" class="btn">Купить</a>
+                        </div>
+                        <div class="actions-wrap">
+                            <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                            <a href="" class="btn-action-ico ico-share js-popup-open" data-popup="popup-share"></a>
+                        </div>
+                    </div>
+                    <div class="section-inner-wrap">
+                        <div class="section-title-wrap">
+                            <div class="section-title">Цвет:</div>
+                            <div class="section-title-select"><b>Фиолетовый</b></div>
+                        </div>
+                        <div class="section-list-wrap">
+                            <div class="elm-photo photo-contain active">
+                                <img src="./img/category01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-inner-wrap">
+                        <div class="desc-content-wrap">
+                            <h2 class="h3-title">Описание</h2>
+                            <p>Привлеките все взгляды этой настраиваемой сумкой-тоутом Furla Giove и сменными ручками, которые придадут вашему образу яркости. Эта большая сумка чрезвычайно вместительна и идеально подходит для того, чтобы брать с собой все необходимое куда угодно. Она изготовлена из роскошной зернистой кожи и может переноситься в руке или на плече благодаря регулируемым ручкам из кожи</p>
+                            <ul>
+                                <li>- Два открытых внутренних кармана</li>
+                                <li>- Внутренний карман на молнии</li>
+                                <li>- Два крючка спереди для регулировки ручек</li>
+                                <li>- Застежка-молния сверху</li>
+                            </ul>
+                            <p>Привлеките все взгляды этой настраиваемой сумкой-тоутом Furla Giove и сменными ручками, которые придадут вашему образу яркости. Эта большая сумка чрезвычайно вместительна и идеально подходит для того, чтобы брать с собой все необходимое куда угодно. Она изготовлена из роскошной зернистой кожи и может переноситься в руке или на плече благодаря регулируемым ручкам из кожи</p>
+                            <ul>
+                                <li>- Два открытых внутренних кармана</li>
+                                <li>- Внутренний карман на молнии</li>
+                                <li>- Два крючка спереди для регулировки ручек</li>
+                                <li>- Застежка-молния сверху</li>
+                            </ul>
+                            <p>Привлеките все взгляды этой настраиваемой сумкой-тоутом Furla Giove и сменными ручками, которые придадут вашему образу яркости. Эта большая сумка чрезвычайно вместительна и идеально подходит для того, чтобы брать с собой все необходимое куда угодно. Она изготовлена из роскошной зернистой кожи и может переноситься в руке или на плече благодаря регулируемым ручкам из кожи</p>
+                            <ul>
+                                <li>- Два открытых внутренних кармана</li>
+                                <li>- Внутренний карман на молнии</li>
+                                <li>- Два крючка спереди для регулировки ручек</li>
+                                <li>- Застежка-молния сверху</li>
+                            </ul>
+                            <p>Привлеките все взгляды этой настраиваемой сумкой-тоутом Furla Giove и сменными ручками, которые придадут вашему образу яркости. Эта большая сумка чрезвычайно вместительна и идеально подходит для того, чтобы брать с собой все необходимое куда угодно. Она изготовлена из роскошной зернистой кожи и может переноситься в руке или на плече благодаря регулируемым ручкам из кожи</p>
+                            <ul>
+                                <li>- Два открытых внутренних кармана</li>
+                                <li>- Внутренний карман на молнии</li>
+                                <li>- Два крючка спереди для регулировки ручек</li>
+                                <li>- Застежка-молния сверху</li>
+                            </ul>
+                        </div>
+                        <div class="desc-action-wrap">
+                            <a href="" data-show="Больше" data-hide="Скрыть" class="link-main" onclick="this.closest('.desc-inner-wrap').classList.toggle('active');return false;"></a>
+                        </div>
+                    </div>
+                    <div class="info-list-wrap">
+                        <div class="info-wrap js-popup-wrap no-close">
+                            <a href="" class="btn-action-tgl btn-popup-open js-btn-popup-toggle">Бесплатная доставка и возврат</a>
+                            <div class="info-content-block js-popup-block">
+                                <p>Все заказы, размещенные до 1:00 вечера по восточному стандартному времени, будут отправлены в течение 24 часов.Время доставки заказа будет зависеть от выбранного вами типа доставки UPS:- Наземное обслуживание UPS: БЕСПЛАТНО (6-8 рабочих дней)- Услуга 3-Day Select: 18 долларов США (3 рабочих дня)- Услуга 2-го дня: 21 доллар США (2 рабочих дня)Возврат: Если по какой-либо причине вы не удовлетворены своим заказом, вы можете вернуть его в течение 14 дней с даты получения.Товары с пометкой “Окончательная распродажа”, "Окончательная распродажа" и "Распродажа" при оформлении заказа не подлежат возврату или обмену.</p>
+                            </div>
+                        </div>
+                        <div class="info-wrap js-popup-wrap no-close">
+                            <a href="" class="btn-action-tgl btn-popup-open js-btn-popup-toggle">Сделайте ее идеальным подарком</a>
+                            <div class="info-content-block js-popup-block">
+                                <p>Войдите в систему или зарегистрируйтесь, чтобы получить бесплатную подарочную упаковку.Чтобы получить подарочную упаковку, просто выберите вариант подарка в процессе покупки.</p>
+                                <div class="elm-photo photo-contain">
+                                    <img src="./img/product-main.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-wrap js-popup-wrap no-close">
+                            <a href="" class="btn-action-tgl btn-popup-open js-btn-popup-toggle">Безопасные и простые платежи</a>
+                            <div class="info-content-block js-popup-block">
+                                <p>Все покупки в onFurla.com они гарантированы и безопасны. Выберите предпочтительный способ оплаты.</p>
+                                <div class="pays-wrap">
+                                    <div class="elm-pay">
+                                        <img src="./img/icons/pay01.svg" alt="">
+                                    </div>
+                                    <div class="elm-pay">
+                                        <img src="./img/icons/pay02.svg" alt="">
+                                    </div>
+                                    <div class="elm-pay">
+                                        <img src="./img/icons/pay03.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-wrap js-popup-wrap no-close">
+                            <a href="" class="btn-action-tgl btn-popup-open js-btn-popup-toggle">Двухлетняя гарантия</a>
+                            <div class="info-content-block js-popup-block">
+                                <p>Предлагает вам двухлетнюю гарантию на свою продукцию.Все изделия изготовлены в исключительной технике ручной работы.На каждом изделии есть этикетка с инструкциями по оптимальному уходу. Внимательно прочитайте и следуйте инструкциям по уходу. Если у вас есть какие-либо вопросы, пожалуйста, не стесняйтесь обращаться в нашу службу поддержки клиентов. Обратите внимание: гарантия не распространяется на товары с пометкой "SALE SPECIAL" или "OUTLET".</p>
+                            </div>
+                        </div>
+                        <div class="info-link-wrap">
+                            <a href="" class="link-main">Нужна помощь?</a>
+                        </div>
+                    </div>
+                    <div class="catalog-inner-wrap">
+                        <div class="h3-title">Другие цвета</div>
+                        <div class="catalog-box catalog-inner">
+                            <div class="slider-inner-wrap">
+                                <div class="slider-wrap">
+                                    <div class="slider">
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category01.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category02.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category03.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category01.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category02.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category03.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="sl-wrap">
+                                            <a href="" class="item-tile-category-main tile-catalog tile-catalog-add">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo photo-contain">
+                                                        <img src="./img/category01.png" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                                    <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                                    <span class="tile-price" data-unit="€">477</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/info-inner-wrap-->
+
+            </div>
+            <!--/card-box-->
+
+            <!--inner-title-box-->
+            <div class="inner-title-box">
+                <h2 class="h1-title">Вам также может понравится</h2>
+            </div>
+            <!--/inner-title-box-->
+            <!--catalog-box-->
+            <div class="catalog-box">
+                <div class="slider-inner-wrap">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category01.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category02.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category03.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category01.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category02.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category03.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category01.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/catalog-box-->
+
+            <!--inner-title-box-->
+            <div class="inner-title-box">
+                <h2 class="h1-title">В последнее время вы смотрели</h2>
+            </div>
+            <!--/inner-title-box-->
+            <!--catalog-box-->
+            <div class="catalog-box">
+                <div class="slider-inner-wrap">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <!--item wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main tile-catalog">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category01.png" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="tile-info-wrap">
+                                        <span class="tile-info-subtitle">B0005492.P420 LION</span>
+                                        <span class="tile-info-title">Маленькая спортивная сумка</span>
+                                        <span class="tile-price" data-unit="€">477</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/catalog-box-->
+
+            <!--pluses-box-->
+            <div class="pluses-box">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/plus01.svg" alt="">
+                            </div>
+                            <div class="tile-title">Безопасные платежи</div>
+                            <div class="tile-info">Мы гарантируем безопасность покупок</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/plus02.svg" alt="">
+                            </div>
+                            <div class="tile-title">Бесплатная доставка и возврат</div>
+                            <div class="tile-info">Мы гарантируем безопасность покупок</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/plus03.svg" alt="">
+                            </div>
+                            <div class="tile-title">Нужна помощь?</div>
+                            <div class="tile-info">Мы гарантируем безопасность покупок</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/pluses-box-->
+
+        </div>
+        <!--/page-full-->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-top-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <picture>
+                                <source srcset="./img/main/logo-light.svg" media="(max-width: 1023)">
+                                <source srcset="./img/main/logo-main.svg" media="">
+                                <img src="./img/main/logo-main.svg" alt="" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="footer-title">Подпишитесь на подписку</div>
+                        <form action="/" class="frm-main-button">
+                            <div class="field-input">
+                                <input type="email" class="form-input" placeholder="Email">
+                            </div>
+                            <div class="field-button"><button class="btn button-light">OK</button></div>
+                        </form>
+                    </div>
+                    <div class="soc-wrap">
+                        <div class="footer-title">Наши социальные сети</div>
+                        <div class="soc-items">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc01.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc02.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu-panel cnt-section">
+                <div class="inner-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="info-wrap">© GEORGE KINI 2023</div>
+                    <div class="info-wrap"><a href="">Все права защищены</a></div>
+                    <div class="info-wrap"><a href="">Политика конфиденциальности</a></div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <div class="popup-outer-box" id="popup-share">
+            <div class="popup-box">
+                <a href="" class="btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Поделиться</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <div class="popup-share-list">
+                        <a href="" class="btn-action-ico button-soc"><img src="./img/icons/soc01.svg" alt=""></a>
+                        <a href="" class="btn-action-ico button-soc"><img src="./img/icons/soc02.svg" alt=""></a>
+                        <a href="" class="btn-action-ico button-soc"><img src="./img/icons/soc03.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>

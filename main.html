@@ -10,9 +10,17 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/jquery-ui.min.js" defer></script>
+    <script src="./js/jquery.ui.touch-punch.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/jquery.swipebox.min.js" defer></script>
+    <script src="./js/jquery.maskedinput.min.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -23,34 +31,556 @@
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                44444
+                <div class="header-main-panel">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="actions-wrap actions-locale">
+                        <div class="action-wrap action-lang">
+                            <a href="" class="btn-action-lang">
+                                <span class="button-ico">
+                                    <img src="./img/icons/lang.svg" alt="">
+                                </span>
+                                <span class="button-title">ru</span>
+                            </a>
+                        </div>
+                        <div class="action-wrap action-select js-popup-wrap">
+                            <a href="" class="btn-action-toggle btn-popup-open js-btn-popup-toggle">Русский</a>
+                            <div class="popup-content-block js-popup-block">
+                                <ul class="menu">
+                                    <li><a href="">English</a></li>
+                                    <li><a href="">Русский</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions-wrap actions-main">
+                        <div class="action-wrap action-search">
+                            <a href="" class="btn-action-ico ico-search"></a>
+                        </div>
+                        <div class="action-wrap action-location">
+                            <a href="" class="btn-action-ico ico-location"></a>
+                        </div>
+                        <div class="action-wrap action-user">
+                            <a href="" class="btn-action-ico ico-user"></a>
+                        </div>
+                        <div class="action-wrap action-cart">
+                            <a href="" class="btn-action-ico ico-cart" data-count="10"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-menu-panel main-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-action-ico ico-menu btn-popup-open js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="">New in</a>
+                                </li>
+                                <li>
+                                    <a href="">Сумки</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Обувь</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Часы</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Для женщин</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Для мужчин</a>
+                                    <ul>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                        <li><a href="">Пункт меню</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-actions-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-user.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Войти / Зарегистрироваться</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-callback.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Свяжитесь с нами</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-lang.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Россия</span>
+                                    </a>
+                                </li>
+                                <li class="menu-sep">
+                                    <a href="" class="btn-menu">
+                                        <span class="button-ico">
+                                            <img src="./img/icons/menu-chat.svg" alt="">
+                                        </span>
+                                        <span class="button-title">Руссский</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- /header -->
 
-        <!-- page -->
-        <div class="page">
-            2222
+        <!--main-photo-box-->
+        <div class="main-photo-box cnt-section section-main">
+            <div class="photo-inner-wrap">
+                <img src="./img/top.jpg" alt="" class="img-bg-cover">
+            </div>
         </div>
-        <!-- /page -->
+        <!--/main-photo-box-->
+        <!--main-tiles-box-->
+        <div class="main-tiles-box cnt-section section-main">
+            <div class="inner-wrap">
+                <div class="scroll-mobile-wrap">
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <a href="" class="item-tile-category">
+                                <span class="tile-ico">
+                                    <img src="./img/icons/cat01.svg" alt="">
+                                </span>
+                                <span class="tile-title">Клачи</span>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <a href="" class="item-tile-category">
+                                <span class="tile-ico">
+                                    <img src="./img/icons/cat02.svg" alt="">
+                                </span>
+                                <span class="tile-title">кросбоди</span>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <a href="" class="item-tile-category">
+                                <span class="tile-ico">
+                                    <img src="./img/icons/cat03.svg" alt="">
+                                </span>
+                                <span class="tile-title">Рюкзаки</span>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <a href="" class="item-tile-category">
+                                <span class="tile-ico">
+                                    <img src="./img/icons/cat04.svg" alt="">
+                                </span>
+                                <span class="tile-title">тоуты</span>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <a href="" class="item-tile-category">
+                                <span class="tile-ico">
+                                    <img src="./img/icons/cat05.svg" alt="">
+                                </span>
+                                <span class="tile-title">Ново</span>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <a href="" class="item-tile-category">
+                                <span class="tile-ico">
+                                    <img src="./img/icons/cat06.svg" alt="">
+                                </span>
+                                <span class="tile-title">Косметички</span>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/main-tiles-box-->
+        <!--main-tiles-slider-box-->
+        <div class="main-tiles-slider-box cnt-section section-main">
+            <div class="inner-wrap wrap-nopadding">
+                <div class="slider-inner-wrap">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category01.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category02.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category03.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category04.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category01.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category02.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category03.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="" class="item-tile-category-main">
+                                    <span class="tile-photo-wrap">
+                                        <span class="tile-action-wrap">
+                                            <span class="btn">Купить</span>
+                                        </span>
+                                        <span class="tile-photo photo-contain">
+                                            <img src="./img/category04.png" alt="">
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/main-tiles-slider-box-->
+        <!--main-photo-box-->
+        <div class="main-photo-box cnt-section section-main section-middle">
+            <div class="photo-inner-wrap">
+                <img src="./img/middle.jpg" alt="" class="img-bg-cover">
+            </div>
+        </div>
+        <!--/main-photo-box-->
+        <!--main-tiles-items-box-->
+        <div class="main-tiles-items-box cnt-section section-main">
+            <div class="main-title-box">
+                <div class="inner-wrap">
+                    <h2 class="page-title">Новые поступления</h2>
+                    <p>La colección Otoño Invierno 2023 de Furla celebra la Bellezza y el Equilibrio de Giardini all'italiana. Los bolsos y accesorios realzan la Eleganza y la Artigianalità, con pieles finas en colores otoñales. Estilo y sofisticación en cada detalle.</p>
+                    <a href="" class="btn">купить</a>
+                </div>
+            </div>
+            <div class="inner-wrap wrap-nopadding">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category-main">
+                            <span class="tile-photo-wrap">
+                                <span class="tile-photo photo-cover">
+                                    <img src="./img/category01.jpg" alt="">
+                                </span>
+                            </span>
+                            <span class="tile-title-wrap">
+                                <span class="tile-title">сумки</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category-main">
+                            <span class="tile-photo-wrap">
+                                <span class="tile-photo photo-cover">
+                                    <img src="./img/category02.jpg" alt="">
+                                </span>
+                            </span>
+                            <span class="tile-title-wrap">
+                                <span class="tile-title">кошельки</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category-main">
+                            <span class="tile-photo-wrap">
+                                <span class="tile-photo photo-cover">
+                                    <img src="./img/category03.jpg" alt="">
+                                </span>
+                            </span>
+                            <span class="tile-title-wrap">
+                                <span class="tile-title">часы</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category-main">
+                            <span class="tile-photo-wrap">
+                                <span class="tile-photo photo-cover">
+                                    <img src="./img/category04.jpg" alt="">
+                                </span>
+                            </span>
+                            <span class="tile-title-wrap">
+                                <span class="tile-title">Обувь</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+        </div>
+        <!--/main-tiles-items-box-->
+        <!--main-photo-box-->
+        <div class="main-photo-box cnt-section section-main section-middle">
+            <div class="photo-inner-wrap">
+                <img src="./img/middle.jpg" alt="" class="img-bg-cover">
+            </div>
+        </div>
+        <!--/main-photo-box-->
+        <!--main-title-box-->
+        <div class="main-title-box cnt-section section-main">
+            <div class="inner-wrap">
+                <h2 class="page-title">Сумки</h2>
+                <p>Elegancia moderna. Furla 1927 está llamando su nombre.</p>
+                <a href="" class="btn">купить</a>
+            </div>
+        </div>
+        <!--/main-title-box-->
 
 
         <!-- footer -->
         <footer class="footer">
-            <div class="inner-wrap">
-                333333
+            <div class="footer-top-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <picture>
+                                <source srcset="./img/main/logo-light.svg" media="(max-width: 1023)">
+                                <source srcset="./img/main/logo-main.svg" media="">
+                                <img src="./img/main/logo-main.svg" alt="" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="footer-title">Подпишитесь на подписку</div>
+                        <form action="/" class="frm-main-button">
+                            <div class="field-input">
+                                <input type="email" class="form-input" placeholder="Email">
+                            </div>
+                            <div class="field-button"><button class="btn button-light">OK</button></div>
+                        </form>
+                    </div>
+                    <div class="soc-wrap">
+                        <div class="footer-title">Наши социальные сети</div>
+                        <div class="soc-items">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc01.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc02.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu-panel cnt-section">
+                <div class="inner-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="info-wrap">© GEORGE KINI 2023</div>
+                    <div class="info-wrap"><a href="">Все права защищены</a></div>
+                    <div class="info-wrap"><a href="">Политика конфиденциальности</a></div>
+                </div>
             </div>
         </footer>
         <!-- /footer -->
 
+        <div class="popup-outer-box" id="popup-share">
+            <div class="popup-box">
+                <a href="" class="btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Поделиться</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <div class="popup-share-list">
+                        <a href="" class="btn-action-ico button-soc"><img src="./img/icons/soc01.svg" alt=""></a>
+                        <a href="" class="btn-action-ico button-soc"><img src="./img/icons/soc02.svg" alt=""></a>
+                        <a href="" class="btn-action-ico button-soc"><img src="./img/icons/soc03.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
     </div>
     <!-- /wrap -->
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.maskedinput.min.js"></script>
-    <script src="./js/scripts.js"></script>
+
 
 </body>
 

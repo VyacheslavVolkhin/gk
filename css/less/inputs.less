@@ -1,0 +1,427 @@
+/* ----------------------------------- *\
+			inputs elements styles
+\* ----------------------------------- */
+.form-input[placeholder] {
+    text-overflow: ellipsis;
+}
+.form-input {
+    text-overflow: ellipsis;
+    height: 40px;
+    padding: 0 14px;
+    color: var(--clr-base);
+    font-size: 14px;
+    border: 1px solid var(--clr-border);
+    background-color: transparent;
+}
+textarea.form-input {
+
+}
+select.form-input {
+    display: block;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding-right: 30px;
+    background-image: url(../img/icons/arrow-select.svg);
+    background-size: 24px auto;
+    background-position: right 20px center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    appearance: none!important;
+    line-height: 1em;
+    text-indent: 0.01px;
+    //text-overflow: '';
+    outline: none;
+    cursor: pointer;
+    &.form-input-clear {
+        height: auto;
+        border: none;
+        min-height: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1em;
+        line-height: inherit;
+        padding: 0 24px 0 0;
+        color: inherit;
+        font-weight: bold;
+        background-image: url(../img/icons/arrow-select.svg);
+        background-size: 24px auto;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+}
+select::-ms-expand {
+    display: none;
+}
+//   <select class="form-input form-input-line" required>
+//       <option value="" disabled selected hidden>Выбрать</option>
+//       <option>Пункт списка</option>
+//   </select>
+select.form-input:required:invalid {
+    color: #ADADAD;
+}
+[placeholder]::-webkit-input-placeholder {color: var(--clr-base);}
+[placeholder]:-moz-placeholder {color: var(--clr-base);}
+[placeholder]::-moz-placeholder {color: var(--clr-base);}
+[placeholder]:-ms-input-placeholder {color: var(--clr-base);}
+.btn {
+    height: 43px;
+    padding: 0 14px;
+    border: 1px solid var(--clr-base);
+    background: var(--clr-base);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    &:hover {
+        background-color: var(--clr-att);
+        border-color: var(--clr-att);
+        color: #fff;
+    }
+    &.button-light {
+        &:not(:hover) {
+            background-color: #f9f9f9;
+            border-color: #f9f9f9;
+            color: #808080;
+        }
+    }
+    &.button-border {
+        &:not(:hover) {
+            background-color: transparent;
+            color: #231f20;
+        }
+        &:hover, &.active {
+            background-color: var(--clr-att);
+            border-color: var(--clr-att);
+            .button-ico {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .button-ico {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+        transition: all ease 0.2s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .button-title {
+        &[data-title] {
+            &:before {
+                content: attr(data-title);
+            }
+        }
+    }
+    &.active {
+        .button-title {
+            &[data-title-active] {
+                &:before {
+                    content: attr(data-title-active);
+                }
+            }
+        }
+    }
+}
+.btn-action-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--clr-base);
+    padding: 0 10px;
+    &:hover {
+        color: var(--clr-base);
+    }
+    .button-ico {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        margin: 0 10px 0 0;
+    }
+}
+.btn-action-sort {
+    display: block;
+    position: relative;
+    color: var(--clr-base);
+    padding: 0 24px 0 0;
+    font-weight: bold;
+    &:hover {
+        color: var(--clr-base);
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background: url(../img/icons/arrow-sort.svg) center no-repeat;
+        background-size: 100% auto;
+        top: 50%;
+        right: 0;
+        transition: all ease 0.2s;
+        margin-top: -12px;
+    }
+    &.sort-down {
+        &:before {
+            .t-rotate(-180deg);
+        }
+    }
+}
+.btn-action-tgl {
+    display: block;
+    position: relative;
+    padding: 19px 40px 19px 20px;
+    color: var(--clr-base);
+    font-size: 16px;
+    line-height: 1.35;
+    &:hover {
+        color: var(--clr-base);
+    }
+    &.active {
+        &:before {
+            .t-rotate(0deg);
+        }
+    }
+    &:before, &:after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 2px;
+        background: var(--clr-base);
+        position: absolute;
+        top: 50%;
+        right: 28px;
+        margin: -1px -8px 0 0;
+        transition: all ease 0.2s;
+    }
+    &:before {
+        .t-rotate(90deg);
+    }
+}
+.btn-action-ico {
+    min-width: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 40px;height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    flex-shrink: 0;
+    &:not(.btn) {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    &.btn {
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        display: block;
+    }
+    &:before, &:after, [class*="icon-"], img, svg {
+        display: block;
+        position: absolute;
+        top: 0;bottom: 0;left: 0;right: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        transition: all ease 0.2s;
+    }
+    img, svg {
+        max-width: 24px;
+        max-height: 24px;
+    }
+    &:before, &:after {
+        content: "";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+    }
+    &:hover {
+        text-decoration: none;
+        &:not(.btn) {
+            background: none;
+            box-shadow: none;
+        }
+    }
+    &.ico-share {
+        &:before {
+            background-image: url(../img/icons/share.svg);
+        }
+    }
+    &.ico-fav {
+        &:before {
+            background-image: url(../img/icons/fav.svg);
+        }
+        &:after {
+            background-image: url(../img/icons/fav-active.svg);
+            opacity: 0;
+        }
+        &.active {
+            &:before {
+                opacity: 0;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+    &.ico-arrow {
+        z-index: 20;
+        cursor: pointer;
+        &:before {
+            background-image: url(../img/icons/arrow-slider.svg);
+            background-size: 32px auto;
+        }
+        &:hover {
+        }
+    }
+    &.ico-arrow-prev {
+        &:before {
+            .t-rotate(180deg);
+        }
+    }
+    &.ico-menu {
+        &:before {
+            background-image: url(../img/icons/menu.svg);
+        }
+        &:after {
+            background-image: url(../img/icons/menu-close.svg);
+            opacity: 0;
+        }
+        &.active {
+            &:before {
+                opacity: 0;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+    &.ico-close {
+        &:before {
+            background-image: url(../img/icons/menu-close.svg);
+            background-size: 34px auto;
+        }
+    }
+    &.ico-search {
+        &:before {
+            background-image: url(../img/icons/search.svg);
+            background-size: 34px auto;
+        }
+    }
+    &.ico-user {
+        &:before {
+            background-image: url(../img/icons/user.svg);
+            background-size: 34px auto;
+        }
+    }
+    &.ico-location {
+        &:before {
+            background-image: url(../img/icons/location.svg);
+            background-size: 34px auto;
+        }
+    }
+    &.ico-cart {
+        &:before {
+            background-image: url(../img/icons/cart.svg);
+            background-size: 34px auto;
+        }
+    }
+    &.button-soc {
+        img, svg {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+[data-count] {
+    width: auto;
+    padding-left: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: var(--clr-base);
+    text-align: left;
+    &:before {
+        width: 40px;
+        right: auto;
+    }
+    &:after {
+        content: attr(data-count);
+        position: static;
+        display: block;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+}
+.btn-action-toggle {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 27px 0 0;
+    color: var(--clr-base);
+    &.active {
+        &:before {
+            .t-rotate(270deg);
+        }
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background: url(../img/icons/arrow-menu.svg) center no-repeat;
+        background-size: 100% auto;
+        top: 50%;
+        right: 0;
+        margin-top: -12px;
+        .t-rotate(90deg);
+        transition: transform ease 0.2s;
+    }
+}
+.btn-action-lang {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--clr-base);
+    padding: 0 0 0 52px;
+    height: 32px;
+    line-height: 32px;
+    .button-ico {
+        width: 43px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -16px;
+    }
+}
+@media (min-width: 1024px) {
+    .form-input {
+        height: 43px;
+        font-size: 16px;
+    }
+}
