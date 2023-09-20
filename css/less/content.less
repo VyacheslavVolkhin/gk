@@ -2,6 +2,22 @@
 			content styles
 \* ----------------------------------- */
 .order-box {
+    .order-total-wrap {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+        background: #F9F9F9;
+        .order-total-title {
+            display: inline;
+            margin-right: 8px;
+        }
+        .order-total-price {
+            display: inline;
+            font-size: 18px;
+            .f500;
+        }
+    }
     .order-section-wrap {
         margin-bottom: 15px;
         border: 1px solid var(--clr-border);
@@ -670,7 +686,7 @@
         flex-shrink: 0;
         max-width: 100%;
         &:last-child {
-            color: #BDBFC2;
+            color: var(--clr-border);
             &:after {
                 display: none;
             }
@@ -1122,6 +1138,9 @@ body.popup-open {
 @media (min-width: 1024px) {
     .order-box {
         margin-bottom: 5rem;
+        .order-total-wrap {
+            display: none;
+        }
         .order-section-wrap {
             margin-bottom: 3rem;
         }
