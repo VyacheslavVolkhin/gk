@@ -46,6 +46,23 @@ p, ul, ol, table, blockquote, .bq-text {
 }
 li {
 	position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--clr-base);
+        position: absolute;
+        top: 0.5em;
+        left: 8px;
+        margin-top: -3px;
+    }
 }
 .menu, .list {
     margin: 0;
@@ -100,9 +117,18 @@ h6, .h6-title {
     line-height: normal;
     text-transform: uppercase;
     .f500;
+    &.title-large {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
 }
 .h3-title, h3 {
     font-size: 18px;
+    text-transform: uppercase;
+    .f500;
+}
+.h4-title, h4 {
+    font-size: 16px;
     text-transform: uppercase;
     .f500;
 }
@@ -167,6 +193,13 @@ h6, .h6-title {
     .h1-title, h1 {
         font-size: 2.4rem;
         line-height: 1.35;
+        &.title-large {
+            margin-bottom: 3rem;
+            font-size: 28px;
+        }
+    }
+    .h4-title {
+        font-size: 18px;
     }
 }
 @media (min-width: 1400px) {

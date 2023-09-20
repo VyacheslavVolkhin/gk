@@ -60,6 +60,27 @@
         }
     }
 }
+.frm-main-code {
+    position: relative;
+    line-height: 1;
+    .btn-action-ico {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 48px;
+        width: 54px;
+    }
+    .form-input {
+        height: 48px;
+        padding-right: 50px;
+        font-size: 16px;
+    }
+    [placeholder]::-webkit-input-placeholder {color: #BDBFC2;}
+    [placeholder]:-moz-placeholder {color: #BDBFC2;}
+    [placeholder]::-moz-placeholder {color: #BDBFC2;}
+    [placeholder]:-ms-input-placeholder {color: #BDBFC2;}
+}
 .frm-main-button {
     display: flex;
     line-height: 1;
@@ -159,6 +180,13 @@
     }
 }
 .frm-select {
+    &.sel-center {
+        label {
+            &:before, &:after {
+                top: 50%;
+            }
+        }
+    }
     label {
         min-height: 24px;
         line-height: 24px;
@@ -183,6 +211,28 @@
             opacity: 0;
         }
     }
+    .lbl-title-wrap {
+        display: flex;
+        align-items: center;
+        line-height: 1.35;
+        min-height: 24px;
+        .lbl-info {
+            flex-shrink: 0;
+            font-weight: bold;
+            padding-left: 10px;
+            width: 110px;
+        }
+        .lbl-title {
+            display: block;
+            flex: 1;
+        }
+        .lbl-title-info {
+            font-size: 12px;
+            color: var(--clr-border);
+            display: block;
+            margin-top: 4px;
+        }
+    }
     input {
         &:checked {
             &~label {
@@ -190,6 +240,11 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+    a {
+        &:not(:hover) {
+            color: inherit;
         }
     }
 }

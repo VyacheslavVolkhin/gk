@@ -1,4 +1,23 @@
-
+//order active
+const orderNextButton = document.querySelectorAll('.js-order-next')
+const orderEditButton = document.querySelectorAll('.js-order-edit')
+for (i = 0; i < orderNextButton.length; i++) {
+	orderNextButton[i].addEventListener('click', function(e) {
+		this.closest('.order-section-wrap').classList.toggle('result-active')
+		this.closest('.order-section-wrap').nextElementSibling.classList.add('active')
+		e.preventDefault()
+		e.stopPropagation()
+		return false
+	})
+}
+for (i = 0; i < orderEditButton.length; i++) {
+	orderEditButton[i].addEventListener('click', function(e) {
+		this.closest('.order-section-wrap').classList.toggle('result-active')
+		e.preventDefault()
+		e.stopPropagation()
+		return false
+	})
+}
 
 //btn tgl
 let tglButtons = document.querySelectorAll('.js-btn-tgl')
@@ -134,7 +153,30 @@ popupElements.forEach(element => {
 
 $(window).on('load', function () {
 
-
+	//content toggle action
+	$('input[data-content]').each(function () {
+		if ($(this).is(':checked')) {
+			let selectContent = $(this).attr('data-content');
+			$('.frm-content[data-content="' + selectContent + '"]').addClass('active');
+		}
+	})
+	$('input[data-content]').on('click', function () {
+		$('.frm-content.active').removeClass('active');
+		$('input[data-content]').each(function () {
+			if ($(this).is(':checked')) {
+				let selectContent = $(this).attr('data-content');
+				$('.frm-content[data-content="' + selectContent + '"]').addClass('active');
+			}
+		})
+	})
+	$('.btn[data-content]').on('click', function () {
+		let dataContent = $(this).attr('data-content');
+		$(this).attr('disabled', 'disabled');
+		$('.frm-content[data-content="' + dataContent + '"]').slideDown(200);
+		return false;
+	})
+	
+	
 	//popups
 	let popupCurrent;
 	$('.js-popup-open').on('click', function () {
