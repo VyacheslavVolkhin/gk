@@ -80,8 +80,8 @@ select.form-input:required:invalid {
     letter-spacing: 2px;
     color: #fff;
     &:hover {
-        background-color: var(--clr-att);
-        border-color: var(--clr-att);
+        background-color: var(--clr-border);
+        border-color: var(--clr-border);
         color: #fff;
     }
     &.button-light {
@@ -89,6 +89,10 @@ select.form-input:required:invalid {
             background-color: #f9f9f9;
             border-color: #f9f9f9;
             color: #808080;
+        }
+        &:hover {
+            border-color: var(--clr-base);
+            background-color: var(--clr-base);
         }
     }
     &.button-border {
@@ -433,5 +437,11 @@ select.form-input:required:invalid {
     .form-input {
         height: 43px;
         font-size: 16px;
+    }
+    .btn {
+        &.button-large {
+            height: 46px;
+            font-size: 16px;
+        }
     }
 }

@@ -696,6 +696,7 @@
             display: block;
             width: 28px;
             position: absolute;
+            text-align: center;
             top: 0;
             left: 100%;
         }
@@ -735,6 +736,7 @@
     padding-bottom: 30px;
     .items-wrap {
         margin: 0 -8px -35px -8px;
+        justify-content: center;
     }
     .item-wrap {
         padding: 0 8px;
@@ -786,13 +788,24 @@
             }
         }
     }
-    .photo-inner-wrap {
+    .photo-inner-wrap, .video-inner-wrap {
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         width: 612px;
         min-width: 100%;
+    }
+    .background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
     }
 }
 .content-outer-wrap {
@@ -1054,7 +1067,7 @@ body.popup-open {
         }
         .slick-dots {
             flex-direction: column;
-            height: 81rem;
+            height: 72rem;
             width: 15px;
             position: absolute;
             top: 0;
@@ -1080,17 +1093,17 @@ body.popup-open {
         display: flex;
         margin-bottom: 15px;
         .photos-slider-box {
-            max-width: 81rem;
+            max-width: 72rem;
         }
         .photos-inner-wrap {
             padding: 0 3rem 0 25px;
             order: 1;
             margin-bottom: 15px;
             flex: 1;
-            max-width: calc(100% - 45.5rem);
+            max-width: calc(100% - 54rem);
         }
         .info-inner-wrap {
-            width: 45.5rem;
+            width: 54rem;
             flex-shrink: 0;
             order: 2;
         }
@@ -1103,7 +1116,7 @@ body.popup-open {
     }
     .category-lead-box {
         display: flex;
-        min-height: 69rem;
+        min-height: 50rem;
         .photo-inner-wrap {
             width: 50%;
             flex-shrink: 0;
@@ -1315,7 +1328,8 @@ body.popup-open {
         .item-wrap {
             padding-left: 15px;
             padding-right: 15px;
-            width: 25%;
+            width: 33.33%;
+            max-width: 48rem;
         }
     }
     .cnt-section {
@@ -1325,7 +1339,10 @@ body.popup-open {
     }
     .main-title-box {
         padding: 4rem 0 5rem 0;
-        font-size: 2rem;
+        font-size: 16px;
+        .page-title {
+            font-size: 3.4rem;
+        }
     }
     .main-tiles-box {
         padding-bottom: 0;
