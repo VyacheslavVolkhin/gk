@@ -77,6 +77,36 @@ li {
         }
     }
 }
+ol {
+    counter-reset: li; 
+    list-style: none;
+    li {
+    	position: relative;
+        padding-left: 18px;
+    	&:before {
+    		content: counter(li) '.'; 
+			counter-increment: li; 
+            border-radius: 0;
+            background-color: transparent;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: auto;
+            color: var(--clr-att-hover);
+    	}
+        &:nth-child(9)~li {
+            padding-left: 24px;
+        }
+        &:nth-child(9)~li:before {
+            content: counter(li) '.';
+            width: 24px;
+        }
+    }
+}
 a {
     text-decoration: none;
     color: var(--clr-att);

@@ -853,6 +853,71 @@ body.popup-open {
         display: flex;
     }
 }
+.popup-text {
+    .popup-box {
+        width: 980px;
+        padding: 4.8rem 4.3rem 2.0rem 3.7rem;
+        .btn-action-ico.ico-close {
+            top: 0;
+            right: 35px;
+        }
+        .popup-content-wrap {
+            max-height: 100%;
+            padding-right: 10px;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                height: 3px;
+                width: 3px;
+                background-color: #F9F9F9;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: var(--clr-base);
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: var(--clr-base);
+            }
+            &::-webkit-scrollbar-button:vertical:start:decrement {
+                background-color: transparent;
+                width: 0;
+                height: 0;
+            }
+            &::-webkit-scrollbar-button:vertical:end:increment {
+                background-color: transparent;
+                width: 0;
+                height: 0;
+            }
+            &::-webkit-scrollbar-button:horizontal:start:decrement {
+                background-color: transparent;
+                width: 0;
+                height: 0;
+            }
+            &::-webkit-scrollbar-button:horizontal:end:increment {
+                background-color: transparent;
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+}
+.popup-article-wrap {
+    font-size: 14px;
+    p, li, ol, ul {
+        margin: 0;
+    }
+    .h2-title {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 0 0 15px 0;
+        .f500;
+    }
+    .h3-title {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: inherit;
+        font-family: 'PlumbC', sans-serif;
+        margin: 0;
+    }
+}
 .popup-box {
     display: flex;
     flex-direction: column;
@@ -911,6 +976,20 @@ body.popup-open {
     }
 }
 @media (max-width: 1023px) {
+    .popup-text {
+        .popup-box {
+            padding: 40px 20px 20px 20px;
+            .btn-action-ico.ico-close {
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .popup-article-wrap {
+        .h2-title {
+            font-size: 18px;
+        }
+    }
     .catalog-box {
         .slider-wrap {
             &:has(.ico-arrow) {

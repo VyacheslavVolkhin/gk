@@ -1,6 +1,69 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-field-counter {
+    width: 140px;
+    padding: 0 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    .field-counter-button {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background: #F9F9F9;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        &:before, &:after {
+            content: "";
+            display: block;
+            width: 12px;
+            height: 2px;
+            border-radius: 1px;
+            background: var(--clr-base);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -1px 0 0 -6px;
+        }
+        &:before {
+            .t-rotate(90deg);
+        }
+        &[data-type="minus"] {
+            left: 0;
+            right: auto;
+            &:before {
+                opacity: 0;
+            }
+        }
+        &:hover {
+            background-color: var(--clr-base);
+            &:before, &:after {
+                background-color: #fff;
+            }
+        }
+    }
+    .form-input {
+        height: 40px;
+        padding: 0;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        .f500;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number]{
+        -moz-appearance: textfield;
+    }
+}
 .frm-field-range {
     .field-range-slider {
         padding: 0 12px;

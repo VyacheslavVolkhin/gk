@@ -1,3 +1,41 @@
+//field counter
+let fieldCounter = document.getElementsByClassName('frm-field-counter')
+
+function fieldCounterButtons(index) {
+	return `
+        <button class="field-counter-button" data-index="${index}" data-type="plus"></button>
+        <button class="field-counter-button" data-index="${index}" data-type="minus"></button>
+    `
+}
+
+function fieldCounterCreator() {
+	for (i = 0; i < fieldCounter.length; i++) {
+		fieldCounter[i].insertAdjacentHTML('beforeend', fieldCounterButtons(i))
+		fieldCounter[i].onclick = function (event) {
+			const type = event.target.dataset.type
+			const index = event.target.dataset.index
+			if (index) {
+				const fieldCounterPlus = fieldCounter[index].children[1]
+				const fieldCounterMinus = fieldCounter[index].children[2]
+				const fieldCounterInput = fieldCounter[index].children[0]
+				if (type === 'plus') {
+					fieldCounterInput.value = Number(fieldCounterInput.value) + 1
+				} else if (type === 'minus') {
+					fieldCounterInput.value = Number(fieldCounterInput.value) - 1
+				}
+				if (Number(fieldCounterInput.value) > 0) {
+					fieldCounterMinus.removeAttribute('disabled')
+				} else if (Number(fieldCounterInput.value) < 1) {
+					fieldCounterMinus.setAttribute('disabled', true)
+				}
+			}
+		}
+	}
+}
+
+fieldCounterCreator();
+
+
 //order active
 const orderNextButton = document.querySelectorAll('.js-order-next')
 const orderEditButton = document.querySelectorAll('.js-order-edit')
