@@ -23,10 +23,14 @@
     .tile-counter {
         width: 100px;
         flex-shrink: 0;
+        position: relative;
+        z-index: 6;
     }
     .tile-cart {
         padding-left: 8px;
         flex-shrink: 0;
+        position: relative;
+        z-index: 6;
     }
     .tile-subtitle {
         display: block;
@@ -57,6 +61,9 @@
         &:not(:hover) {
             color: inherit;
         }
+        &:hover {
+            color: var(--clr-link);
+        }
     }
     .form-input {
         height: 40px;
@@ -65,6 +72,9 @@
     }
 }
 .item-tile-order {
+    .tile-link {
+        z-index: 10;
+    }
     .tile-photo-wrap {
         width: 100px;
     }
@@ -244,7 +254,7 @@
     .f500;
     text-transform: uppercase;
     //color: var(--clr-base);
-    color: #6A6A6A;
+    color: var(--clr-link);
     line-height: normal;
     text-align: center;
     &:hover {

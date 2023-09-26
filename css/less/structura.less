@@ -128,7 +128,7 @@ html {
     a {
         display: block;
         padding: 5px 0;
-        color: #6A6A6A;
+        color: var(--clr-link);
         &:hover, &.active {
             color: var(--clr-base);
         }
@@ -149,8 +149,9 @@ html {
         width: 100%;
     }
     a {
-        &:not(:hover) {
-            color: inherit;
+        color: var(--clr-base);
+        &:hover {
+            color: var(--clr-att);
         }
     }
 }
@@ -674,10 +675,11 @@ html {
                 position: absolute;
                 border-top: 1px solid var(--clr-border);
                 top: 100%;
-                left: var(--paddingContainer);
-                right: var(--paddingContainer);
+                left: 50%;
+                width: 970px;
+                margin-left: -485px;
                 flex-direction: row;
-                padding: 5.6rem 0 5rem 0;
+                padding: 5.6rem 50px 5rem 50px;
                 font-size: 14px;
                 line-height: 1.35;
                 z-index: 10;
