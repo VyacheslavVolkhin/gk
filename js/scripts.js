@@ -1,5 +1,21 @@
 //field counter
 let fieldCounter = document.getElementsByClassName('frm-field-counter')
+let counterTotalText = document.querySelectorAll('[data-counter-text]')
+
+function fieldCounterResult() {
+	for (i = 0; i < counterTotalText.length; i++) {
+		console.log(counterTotalText.length)
+		let counterTotal = counterTotalText[i].dataset.counterText
+		for (j = 0; j < fieldCounter.length; j++) {
+			if (fieldCounter[j].dataset.counter == counterTotal) {
+				let counterValue = fieldCounter[j].querySelector('input').value
+				let counterPrice = fieldCounter[j].dataset.price
+				let counterResult = counterValue * counterPrice
+				counterTotalText[j].textContent = counterResult
+			}
+		}
+	}
+} 
 
 function fieldCounterButtons(index) {
 	return `
@@ -28,12 +44,14 @@ function fieldCounterCreator() {
 				} else if (Number(fieldCounterInput.value) < 1) {
 					fieldCounterMinus.setAttribute('disabled', true)
 				}
+				fieldCounterResult();
 			}
 		}
 	}
 }
 
 fieldCounterCreator();
+fieldCounterResult();
 
 
 //order active

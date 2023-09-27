@@ -513,7 +513,16 @@ html {
         padding-top: 8rem;
         padding-bottom: 5.5rem;
         .menu {
-            columns: 4;
+            columns: inherit;
+            column-gap: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            &>li {
+                width: 25%;
+                flex-shrink: 0;
+                padding: 0 15px;
+            }
         }
     }
     .footer-top-panel {
