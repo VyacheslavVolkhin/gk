@@ -2238,6 +2238,11 @@ body {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: inherit;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 .card-box .desc-inner-wrap {
   padding-bottom: 10px;
@@ -4208,6 +4213,21 @@ select.form-input:required:invalid {
 }
 .frm-select-color input:checked ~ label {
   border-color: var(--clr-att);
+}
+.frm-select.select-right {
+  padding: 5px 0;
+  width: 100%;
+}
+.frm-select.select-right label {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.frm-select.select-right label:before,
+.frm-select.select-right label:after {
+  left: auto;
+  right: 12px;
+  margin-left: 0;
+  margin-right: -12px;
 }
 .frm-select.sel-center label:before,
 .frm-select.sel-center label:after {

@@ -243,6 +243,20 @@
     }
 }
 .frm-select {
+    &.select-right {
+        padding: 5px 0;
+        width: 100%;
+        label {
+            padding-left: 0;
+            padding-right: 32px;
+            &:before, &:after {
+                left: auto;
+                right: 12px;
+                margin-left: 0;
+                margin-right: -12px;
+            }
+        }
+    }
     &.sel-center {
         label {
             &:before, &:after {

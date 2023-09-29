@@ -15,7 +15,7 @@ function fieldCounterResult() {
 			}
 		}
 	}
-} 
+}
 
 function fieldCounterButtons(index) {
 	return `
