@@ -4556,3 +4556,45 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
 /* ----------------------------------- *\
 			icons
 \* ----------------------------------- */
+/*form search*/
+.header .action-search {
+  position: relative;
+}
+.header .action-search .popup-content-block {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  right: 0;
+  width: 300px;
+  z-index: 30;
+}
+.frm-main-search {
+  position: relative;
+  line-height: 1;
+}
+.frm-main-search .form-input {
+  padding-right: 40px;
+  height: 40px;
+  background-color: #fff;
+}
+.frm-main-search .btn-action-ico {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -17px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+}
+@media (max-width: 639px) {
+  .header .action-search {
+    position: static;
+  }
+  .header .action-search .popup-content-block {
+    width: auto;
+    right: var(--paddingContainer);
+    left: var(--paddingContainer);
+  }
+}
+/*end form search*/
